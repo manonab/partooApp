@@ -16,7 +16,10 @@
             "@/components/*": ["app/components/*"],
             "@/hooks/*": ["app/hooks/*"],
             "@/data/*": ["app/data/*"],
+            "@/helpers/*": ["app/helpers/*"],
+            "@/api/*": ["app/api/*"],
             "@/kommon/*": ["app/kommon/*"],
+            "@/assets/*": ["app/assets/*"],
             "@/screens/*": ["app/screens/*"],
             "@/models/*": ["app/models/*"],
             "@/navigation/*": ["app/navigation/*"]

@@ -5,7 +5,9 @@ module.exports = {
     fontSize: {
       m: "17px",
       l: "20px",
+      xlarge: "25px",
       xl: "30px",
+      xxl: "40px",
     },
     colors: {
       observatory: "#049372",
