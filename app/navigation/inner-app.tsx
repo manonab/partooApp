@@ -11,6 +11,7 @@ import { Gryffindor } from "@/screens/gryffindor";
 import { Hufflepuff } from "@/screens/hufflepuff";
 import { Ravenclaw } from "@/screens/ravenclaw";
 import { Slytherin } from "@/screens/slytherin";
+import { UserList } from "@/screens/userList";
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
@@ -75,7 +76,14 @@ export const InnerApp: React.FC = () => {
             headerTintColor: "black",
           }}
         />
-
+        <Stack.Screen
+          name="UserListScreen"
+          component={UserList}
+          options={{
+            headerStyle: { backgroundColor: "#FFF" },
+            headerTintColor: "black",
+          }}
+        />
       </Stack.Navigator>
     </SWRConfig>
   );

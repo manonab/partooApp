@@ -17,6 +17,9 @@ export type RootStackParamList = {
     hogwartsStudent: boolean | undefined;
     hogwartsStaff: boolean | undefined;
   };
+  UserListScreen: {
+    values: Partial<Character[]>;
+  };
 };
 
 export type RootNavigationProp = NavigationProp<RootStackParamList>;

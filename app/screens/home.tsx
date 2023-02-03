@@ -1,5 +1,5 @@
 import React from "react";
-import { Text, ImageBackground, TouchableOpacity } from "react-native";
+import { ImageBackground } from "react-native";
 //packages
 import { NativeStackScreenProps } from "@react-navigation/native-stack";
 //utils
@@ -31,9 +31,6 @@ export const HomeScreen: React.FC<Props> = ({ route }: Props) => {
       {house === "Ravenclaw" && <Ravenclaw data={data} />}
       {house === "Gryffindor" && <Griffindor data={data} />}
       {house === "Hufflepuff" && <Hufflepuff data={data} />}
-      <TouchableOpacity className="bg-whiter w-20 rounded-[999px] h-20 bottom-10 absolute right-10">
-        <Text>Mes</Text>
-      </TouchableOpacity>
     </ImageBackground>
   );
 };

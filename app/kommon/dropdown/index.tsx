@@ -8,16 +8,16 @@ interface Props {
 const Dropdown: React.FC<Props> = ({ setThemedHouse }: Props) => {
   return (
     <SelectDropdown
-      data={mockHarryPotter.map((item) => item.house)}
-      onSelect={(selectedItem) => {
+      data={mockHarryPotter.map(item => item.house)}
+      onSelect={selectedItem => {
         setThemedHouse(selectedItem);
       }}
       defaultButtonText={"Select your house"}
-      buttonTextAfterSelection={(selectedItem) => {
+      buttonTextAfterSelection={selectedItem => {
         return selectedItem;
       }}
-      onChangeSearchInputText={(item) => console.log(item)}
-      rowTextForSelection={(item) => {
+      onChangeSearchInputText={item => console.log(item)}
+      rowTextForSelection={item => {
         return item;
       }}
     />
